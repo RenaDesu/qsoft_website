@@ -47,10 +47,6 @@ function swipers() {
                         spaceBetween: 30,
                         slidesPerView: 'auto',
                     },
-                    768: {
-                        spaceBetween: 30,
-                        slidesPerView: 'auto',
-                    },
                     1440: {
                         spaceBetween: 32,
                         slidesPerView: 4,
