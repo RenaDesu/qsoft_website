@@ -1,0 +1,155 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+
+$bunker: #121920;
+$tundora: #4b4b4b;
+$white: #ffffff;
+$black: #000000;
+$slate-gray: #768298;
+$heather: #bbc4d6;
+$wild-blue-yonder: #6680ae;
+$athens-gray: #ebebf1;
+$curious-blue: #34aadd;
+$tapestry: #a7507b;
+$cerise-red: #dc2c53;
+$carnation: #f95a59;
+$red-orange: #ff3332;
+$golden-grass: #dc971f;
+$tiber: #0a2b37;
+
+//font color
+$font-color-main: $bunker;
+$font-color-secondary: $slate-gray;
+$font-color-light: $white;
+
+//button color
+$button-normal: $curious-blue;
+$button-hover: $wild-blue-yonder;
+$button-active: rgba($wild-blue-yonder, .5);
+$button-disabled: $athens-gray;
+
+$button-text-normal: $white;
+$button-text-disabled: $heather;
+
+//link color
+$link-color: $curious-blue;
+
+//icon color
+$social-icon: $heather;
+$social-hover: $slate-gray;
+
+//logo color
+$logo-footer: $heather;
+$logo-foter-hover: $slate-gray;
+
+//background color
+$main-background: #fafafa;
+
+
+/**
+* Fonts
+*/
+$font-size-base: 16px;
+
+$font-path: "../fonts";
+$font-family-default: "Arial",
+"Helvetica",
+sans-serif;
+$font-family-custom: "Roboto";
+$font-family: $font-family-custom,
+$font-family-default;
+
+//text-size
+$font-size-medium: 14px;
+$line-height-medium: 24px;
+
+$font-size-big: 16px;
+$line-height-big: 26px;
+
+$font-size-small: 12px;
+$line-height-small: 19px;
+
+$font-weight-base: 400;
+$bold-font-weight: 500;
+
+//letter-spacing
+$letter-spacing-tiny: 0.12px;
+$letter-spacing-small: 0.14px;
+$letter-spacing-medium: 0.2px;
+
+//headings-size
+$title-size-big: 30px;
+$title-height-big: 39px;
+$title-size-medium: 24px;
+$title-height-medium: 30px;
+$title-size-small: 20px;
+$title-height-small: 24px;
+
+$title-size-big-desktop: 36px;
+$title-height-bigt-desktop: 47px;
+$title-size-medium-desktop: 30px;
+$title-height-medium-desktop: 38px;
+$title-size-small-desktop: 24px;
+$title-height-small-desktop: 29px;
+
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-mobile-only: "(max-width: 767px)";
+$screen-tablet: "(min-width: 768px)";
+$screen-desktop: "(min-width: 1440px)";
+
+
+
+/**
+* Layout
+*/
+$width-container: 1240px;
+$gap-container: 20px;
+$gap-container-desktop: 100px;
+
+
+/**
+* Sizes
+*/
+$height-header-desktop: 80px;
+$height-header-mobile: 105px;
+
+$checkbox-size: 20px;
+
+
+/**
+* Transitions and Animations
+*/
+$transition-duration: 300ms;
+$transition-duration-fast: 100ms;
+$transition-finction: ease-in-out;
+
+/**
+* Radius
+*/
+$border-radius-small: 2px;
+$border-radius-medium: 5px;
+$border-radius-large: 8px;
+$border-radius-circle: 50%;
+
+
+/**
+* Box-shadows
+*/
+$box-shadow: 0 rem(3px) rem(10px) 0 rgba(0, 0, 0, 0.05);
+$box-shadow-double: 0 rem(3px) rem(10px) 0 rgba(164, 164, 164, 0.03), 0 rem(12px) rem(40px) 0 rgba(0, 0, 0, 0.03);
+$box-shadow-cards-hover: 0 0 rem(10px) 0 rgba(164, 164, 164, 0.03), rem(-3px) 0 rem(40px) 0 rgba(0, 0, 0, 0.10);
+
+
+/**
+* Z-indexes
+*/
+$z-index-header: 50;
+$z-index-nav: 55;

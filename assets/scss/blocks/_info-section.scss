@@ -1,0 +1,5 @@
+.info-section {
+    &__heading {
+        @include visually-hidden;
+    }
+}

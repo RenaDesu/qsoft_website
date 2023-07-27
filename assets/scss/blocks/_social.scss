@@ -1,0 +1,26 @@
+.social {
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        list-style-type: none;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-right: rem(23px);
+        }
+    }
+
+    &__icon {
+        display: block;
+
+        color: $heather;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $slate-gray;
+        }
+    }
+}

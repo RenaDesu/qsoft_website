@@ -1,0 +1,14 @@
+.icons {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: rem(20px);
+    }
+
+    &__item:not(:last-child) {
+        margin-right: rem(20px);
+    }
+}

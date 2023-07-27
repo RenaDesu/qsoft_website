@@ -1,0 +1,29 @@
+.logo {
+    &__link {
+        display: inline-block;
+
+        height: 100%;
+
+        &--footer {
+            color: $heather;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $slate-gray;
+            }
+        }
+    }
+
+    &__pic {
+        &--footer {
+            width: rem(93px);
+            height: rem(18px);
+
+            @media #{$screen-desktop} {
+                width: rem(135px);
+                height: rem(26px);
+            }
+        }
+    }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Детальная страница</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+</head>
+
+<body class="page">
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__column header__column--logo">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <img class="logo__pic" src="./public/images/logo.svg" width="135" height="30"
+                                alt="Логотип QSOFT.">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__column header__column--search">
+                    <form class="search" action="#" method="get">
+                        <label class="search__label" for="search">Поиск</label>
+                        <input class="search__input input input--search" type="search" id="search"
+                            placeholder="Найти...">
+                        <button class="search__button button button--icon button--icon-search" type="button">
+                            <svg class="button__icon button__icon--search icon">
+                                <use xlink:href="./public/images/icons/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="header__column header__column--profile">
+                    <div class="header__profile profile profile--hidden">
+                        <a class="profile__link" href="#">
+                            <div class="profile__block">
+                                <span class="profile__name">Константин</span>
+                                <div class="profile__avatar">
+                                    <img class="profile__avatar-pic" src="./public/images/qsoft-plug.jpg" alt="Аватар."
+                                        width="40" height="40">
+                                </div>
+                            </div>
+                            <span class="profile__icon">
+                                <svg class="profile__icon-pic icon">
+                                    <use xlink:href="./public/images/icons/sprite.svg#icon-profile"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__container page__container--detailed-page container container--grid">
+        <nav class="page__nav nav" data-nav>
+            <div class="nav__container" data-nav-container>
+                <div class="nav__header">
+                    <span class="nav__menu">Меню раздела</span>
+                    <button class="nav__menu-button button button--simple button--icon" type="button" data-close>
+                        <svg class="icon">
+                            <use xlink:href="./public/images/icons/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">Избранное</li>
+                    <li class="nav__item">Моя компания</li>
+                    <li class="nav__item">Моё развитие</li>
+                    <li class="nav__item">Новости компании</li>
+                    <li class="nav__item">Телефонная книга</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="page__menu-button menu-button">
+            <button class="menu-button__button button button--simple button--simple-icon" type="button" data-open>
+                <svg class="button__icon button__icon--simple icon">
+                    <use xlink:href="./public/images/icons/sprite.svg#icon-burger-menu"></use>
+                </svg>
+                <span>Меню раздела</span>
+            </button>
+        </div>
+
+        <nav class="page__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Тут</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Будут</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Хлебные</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active">
+                    <a class="breadcrumbs__link">Крошки</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="page__main-content">
+            <h1>Заголовок страницы</h1>
+
+            <section class="page__news news">
+                <time class="news__datetime" datetime="2019-08-04">4 августа 2019</time>
+                <h2>Заголовок новости</h2>
+                <div class="news__block">
+                    <p>
+                        Проснувшись однажды утром после беспокойного сна, <a href="#">Грегор Замза</a> обнаружил, что он
+                        у
+                        себя в постели
+                        превратился в страшное насекомое.
+                    </p>
+                    <div class="news__illustration">
+                        <picture>
+                            <source media="(min-width: 1440px)"
+                                srcset="./public/images/news-illustration-desktop-1.jpg">
+                            <source media="(min-width: 768px)" srcset="./public/images/news-illustration-tablet-1.jpg">
+                            <img src="./public/images/news-illustration-mobile-1.jpg" alt="Иллюстрация новости.">
+                        </picture>
+                    </div>
+                    <p>
+                        Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый,
+                        выпуклый,
+                        разделенный дугообразными чешуйками живот
+                    </p>
+                    <ul>
+                        <li>
+                            На верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. одеяло.
+                        </li>
+                        <li>
+                            Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились
+                            у
+                            него перед глазами
+                        </li>
+                        <li>
+                            «Что со мной случилось?» – подумал он.
+                        </li>
+                    </ul>
+                    <p>
+                        Это не было сном. <a href="#">Его комната</a>, настоящая, разве что слишком маленькая, но
+                        обычная
+                        комната, мирно
+                        покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные
+                        образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+                        иллюстрированного журнала и вставил в красивую золоченую рамку.
+                    </p>
+                    <blockquote>
+                        На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала
+                        зрителю
+                        тяжелую меховую муфту, в которой целиком исчезала ее рука.
+                    </blockquote>
+                    <p>
+                        Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести
+                        подоконника
+                        стучат капли дождя – привела его и вовсе в грустное настроение.
+                    </p>
+                    <ol>
+                        <li>
+                            «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он
+                            <ol>
+                                <li>
+                                    но это было совершенно <a href="#">неосуществимо</a>
+                                </li>
+                                <li>
+                                    он привык спать на правом боку
+                                </li>
+                                <li>
+                                    а в теперешнем своем состоянии он никак не мог принять этого положения. положения.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину.
+                        </li>
+                        <li>
+                            Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и
+                            отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую
+                            и
+                            слабую боль в боку.
+                        </li>
+                    </ol>
+                </div>
+                <h3>Заголовок третьего уровня</h3>
+                <p>
+                    «Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! Изо дня в день в разъездах.
+                    Деловых волнений куда больше, чем на месте, в <a href="#">торговом доме</a>, а кроме того, изволь
+                    терпеть тяготы
+                    дороги, думай о расписании поездов, мирись с плохим, нерегулярным питанием, завязывай со все новыми
+                    и новыми людьми недолгие, никогда не бывающие сердечными отношения. Черт бы побрал все это.
+                </p>
+                <div class="news__illustration">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="./public/images/news-illustration-desktop-2.jpg">
+                        <source media="(min-width: 768px)" srcset="./public/images/news-illustration-tablet-2.jpg">
+                        <img src="./public/images/news-illustration-mobile-2.jpg" alt="Иллюстрация новости.">
+                    </picture>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__column footer__column--social">
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__list-item">
+                                <a class="social__icon" href="#">
+                                    <svg class="social__icon-pic icon icon--social">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__list-item">
+                                <a class="social__icon" href="#">
+                                    <svg class="social__icon-pic icon icon--social">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column footer__column--menu">
+                    <div class="footer__menu menu">
+                        <ul class="footer__menu-list menu-list">
+                            <li class="menu-list__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column footer__column--logo">
+                    <div class="footer__logo logo">
+                        <a class="logo__link logo__link--footer" href="">
+                            <svg class="logo__pic logo__pic--footer">
+                                <use xlink:href="./public/images/icons/sprite.svg#icon-logo2"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./public/js/script.js" type="module"></script>
+
+</body>
+
+</html>

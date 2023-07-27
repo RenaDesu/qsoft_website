@@ -1,0 +1,26 @@
+// Базовая стилизация для validation (сообщение об ошибке)
+label.error {
+    font-size: rem(10px);
+    line-height: 160%;
+    letter-spacing: rem(0.1px);
+
+    color: $carnation;
+
+    cursor: default;
+}
+
+// Базовая стилизация для validation (input)
+input.error {
+    border: rem(1px) solid $carnation;
+}
+
+// Стилизация для validation (input): для select2
+.error~.select2 .select2-selection {
+    border: rem(1px) solid $carnation;
+    border-radius: rem($border-radius-medium);
+}
+
+.valid~.select2 .select2-selection {
+    border: rem(1px) solid $athens-gray;
+    border-radius: rem($border-radius-medium);
+}

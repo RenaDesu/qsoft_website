@@ -1,0 +1,50 @@
+.faq {
+    padding: rem(50px) rem(20px);
+    margin-left: rem(-$gap-container);
+    margin-right: rem(-$gap-container);
+
+    background-color: $white;
+
+    border-radius: rem($border-radius-medium);
+
+    box-shadow: $box-shadow-double;
+
+    @media #{$screen-tablet} {
+        padding: rem(50px) rem(60px);
+    }
+
+    @media #{$screen-desktop} {
+        padding: rem(50px) rem(76px);
+        margin: 0;
+    }
+
+    &__heading {
+        margin-bottom: rem(24px);
+
+        font-size: rem(18px);
+        line-height: rem(26px);
+
+        @media #{$screen-desktop} {
+            font-size: rem(24px);
+            line-height: rem(32px);
+        }
+    }
+
+    &__spoilers {
+        &--signup {
+            margin-bottom: rem(56px);
+
+            @media #{$screen-desktop} {
+                margin-bottom: rem(40px);
+            }
+        }
+
+        &--login {
+            margin-bottom: rem(50px);
+
+            @media #{$screen-desktop} {
+                margin-bottom: rem(80px);
+            }
+        }
+    }
+}

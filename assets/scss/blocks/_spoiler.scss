@@ -1,0 +1,87 @@
+.spoiler {
+    padding: rem(20px) rem(16px);
+
+    border-radius: rem(12px);
+    background-color: #f4f3f6;
+
+    &+& {
+        margin-top: rem(16px);
+    }
+
+    &__item & {
+        &__toggle {
+            &-icon {
+                display: flex;
+            }
+        }
+    }
+
+    &__item--opened & {
+        &__toggle {
+            &-icon {
+                transform: rotate(180deg);
+
+                color: $cerise-red;
+            }
+        }
+
+        &__title {
+            color: $cerise-red;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        cursor: pointer;
+    }
+
+    &__title {
+        width: 85%;
+
+        font-size: $font-size-medium;
+        line-height: rem(20px);
+        font-weight: $bold-font-weight;
+
+        transition: color $transition-duration $transition-finction;
+
+        @media #{$screen-tablet} {
+            width: 95%;
+        }
+
+        @media #{$screen-desktop} {
+            font-size: $font-size-big;
+            line-height: rem(24px);
+            letter-spacing: rem(0.32px);
+        }
+    }
+
+    &__body {
+        margin: rem(12px) 0 0 0;
+        padding-top: rem(12px);
+
+        display: none;
+
+        font-size: $font-size-small;
+        line-height: rem(16px);
+        font-weight: $bold-font-weight;
+        letter-spacing: rem(0.24px);
+
+        color: #69676d;
+        border-top: rem(1px) solid #d9d9d9;
+
+        @media #{$screen-tablet} {
+            margin: rem(16px) rem(40px) 0 0;
+        }
+
+        @media #{$screen-desktop} {
+            margin: rem(36px) rem(40px) 0 0;
+            padding-bottom: rem(22px);
+
+            font-size: $font-size-medium;
+            line-height: rem(22px);
+            letter-spacing: rem(0.28px);
+        }
+    }
+}
